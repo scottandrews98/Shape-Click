@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <title>Shape Click</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
+    <script src="app.js"></script>
+    
+    </head>
+    
+    <body>
+        
+        <div id="score">
+            <p id="time">0</p>
+        </div>
+        
+        <canvas id="MainStage" width="1000" height="600">
+        </canvas>
+        
+        <div id="content">
+            <div id="header">
+                <h1>Shape Click</h1>
+            </div>
+            
+        <div id="start">
+            <h2>How To Play</h2>
+            <div id="textWrapper">
+                <h4>The aim of the game is for you to click on all the circles on the screen as quick as possible. Your score will be the time in seconds in which it took for you to complete the level. Your score will then be recorded on the level select screen below the level number. Once you've clicked on all the circles on the screen then the game will display your score then take you back to the level select screen. Once all the levels are completed then you can go back and try to improve on your score.</h4>
+                <h4>Good Luck!</h4>
+            </div>    
+            <button id="buttonStart" onclick="startScreen()"><h4 id="buttonText">Play</h4></button>
+        </div>
+            
+        <div id="levelSelect">   
+            
+            <div id="firstRow">
+                <div onclick="level1();" id="one">
+                    <h2>Game: 1</h2>
+                    <h4 id="score1"></h4>
+                </div>
+                <div onclick="level2();" id="two">
+                    <h2>Game: 2</h2>
+                    <h4 id="score2"></h4>
+                </div>
+                <div onclick="level3();" id="three">
+                    <h2>Game: 3</h2>
+                    <h4 id="score3"></h4>
+                </div>
+                <div onclick="level4();" id="four">
+                    <h2>Game: 4</h2>
+                    <h4 id="score4"></h4>
+                </div>
+            </div>
+
+            <div id="secondRow">
+                <div  onclick="level5();" id="one">
+                    <h2>Game: 5</h2>
+                    <h4 id="score5"></h4>
+                </div>
+                <div onclick="level6();" id="two">
+                    <h2>Game: 6</h2>
+                    <h4 id="score6"></h4>
+                </div>
+                <div onclick="level7();" id="three">
+                    <h2>Game: 7</h2>
+                    <h4 id="score7"></h4>
+                </div>
+                <div onclick="level8();" id="four">
+                    <h2>Game: 8</h2>
+                    <h4 id="score8"></h4>
+                </div>
+            </div>
+
+            <div id="thirdRow">
+                <div onclick="level9();" id="one">
+                    <h2>Game: 9</h2>
+                    <h4 id="score9"></h4>
+                </div>
+                <div onclick="level10();" id="two">
+                    <h2>Game: 10</h2>
+                    <h4 id="score10"></h4>
+                </div>
+                <div onclick="level11();" id="three">
+                    <h2>Game: 11</h2>
+                    <h4 id="score11"></h4>
+                </div>
+                <div onclick="level12();" id="four">
+                    <h2>Game: 12</h2>
+                    <h4 id="score12"></h4>
+                </div>
+            </div>
+            
+            </div> 
+            
+            <footer>
+                <h1 id="footerHeading">Are You Up For The Challenge?</h1>
+            </footer>
+        </div>
+        
+       
+        <div id="gameOver">
+            <div id="textWrapper">
+            <h4>Congratulations you finished the game!</h4>
+            <h4 id="yourScore"></h4> 
+            <h4 id="highScore"></h4>        
+            <button id="continue" onclick="gameOver()"><h4 id="buttonText">Continue</h4></button>
+            </div>    
+        </div>
+       
+       
+    </body>
+    
+</html>
